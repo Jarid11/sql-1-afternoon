@@ -1,0 +1,110 @@
+Table - People
+
+/* create table Person (
+  Id integer primary key autoincrement,
+  Name varchar(500) not null,
+  Age float,
+  Height float,
+  City varchar(250)
+  FavoriteColor varchar(250)
+) */
+
+/* insert into Person (name, age, height, city, favoriteColor)
+values ("Jarid", 22, 156, 'Pittsburgh', 'Blue'),
+("Will", 25, 145, 'Dallas', 'Red'),
+("Joe", 22, 175, 'Nashville', 'Black'),
+("Jake", 18, 160, 'Nashville', 'Salmon'),
+("Aaron", 22, 175, 'Austin', 'Green') */
+
+/* select * from Person order by height desc */
+
+/* select * from Person order by height asc */
+
+/* select * from Person order by age desc */
+
+/* select * from person where age > 20 */
+
+/* select * from person where age = 18 */
+
+/* select * from person where age < 20 or age > 30 */
+
+/* select * from person where age != 27 */
+
+/* select * from person where favoritecolor != 'Red' */
+
+/* select * from person where favoritecolor != "Red" AND favoritecolor != "Blue" */
+
+/* select * from person where favoritecolor = "Green" OR favoritecolor = "Orange" */
+
+/* select * from person where favoritecolor in("Green", "Blue", "Orange") */
+
+/* select * from person where favoritecolor in("yellow", "purple") */
+
+Table - Order
+
+/* create table orders (
+personId integer primary key autoincrement, 
+productName varchar(250), 
+productPrice float, 
+Quantity integer
+) */
+
+/* insert into orders (personId, productName, productPrice, Quantity)
+values(1, "sushi", 20.50, 10),
+(2, "burger", 10.00, 6),
+(3, "steak", 15.80, 2),
+(4, "salad", 35.70, 9),
+(5, "ice cream", 6.80, 4) */
+
+/* select * from orders */
+
+/* select sum(Quantity) from orders */
+
+/* select sum(productPrice * Quantity) from orders */
+
+/* select sum(productPrice * Quantity) from orders where personId = 1 */
+
+Table - Artist
+
+/* insert into Artist ( Name)
+values('Linkin Park'),
+('Kid Cudi') */
+
+/* select * from Artist order by name desc limit 10 */
+
+/* select * from artist order by name asc limit 5 */
+
+/* select * from artist where Name like 'black%' */
+
+/* select * from Artist where name like '%black%' */
+
+Table - Employee
+
+/* SELECT FirstName, LastName FROM Employee WHERE City = "Calgary"; */
+
+/* select firstname, lastname, MAX(birthdate) from employee */
+
+/* select firstname, lastname, min(birthdate) as oldest from employee */
+  
+/*   select * from employee where reportsto = 2 */
+
+/*  select count(*) from employee where city = "Lethbridge" */
+
+Table - Invoice
+
+/* select count(*) from invoice where billingCountry = "USA" */
+
+/* select MAX(total) from Invoice  */
+
+/* select min(total) from invoice */
+/* 
+select * from invoice where total > 5 */
+
+/* select * from invoice where total < 5  */
+
+/* select count(*) from invoice where billingstate in("CA", "TX", "AZ") */
+
+/* select avg(total) from invoice  */
+
+/* select sum(total) from invoice */
+
